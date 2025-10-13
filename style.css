@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #f5f5f5;
+  color: #2c2c2c;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(120deg, #1a1a2e, #16213e);
+  color: #f5f5f5;
+  padding: 60px 20px 30px;
+  text-align: center;
+  position: relative; 
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #cccccc;
+}
+
+nav {
+  background-color: #0f3460;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #f5f5f5;
+  padding: 15px 25px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #e0ac1c;
+  color: #1a1a1a;
+}
+
+.content {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #0f3460;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #1a1a2e;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 5px;
+}
+
+.highlight {
+  color: #e0ac1c;
+  font-weight: bold;
+}	
+
+.img {
+  width: 200px;        
+  transition: transform 0.3s ease-in-out;
+}
+
+.img:hover {
+  transform: scale(1.1);
+}
+
+.left {
+  float: left;
+  margin: 10px 10px 10px 0;
+}
+
+.right {
+  float: right;
+  margin: 10px 0 10px 10px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.service-card {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.service-card h3 {
+  margin-top: 0;
+  color: #0f3460;
+  font-size: 1.3em;
+}
+
+.service-card p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    width: 100%;
+  }
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: #e0ac1c;
+  margin: 20px auto 0;
+  border-radius: 5px;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
